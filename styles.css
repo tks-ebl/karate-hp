@@ -114,8 +114,7 @@ img {
   background:
     linear-gradient(90deg, rgba(16, 12, 10, 0.72), rgba(16, 12, 10, 0.38)),
     radial-gradient(circle at bottom left, rgba(163, 23, 23, 0.5), transparent 35%),
-    url("https://images.unsplash.com/photo-1517438984742-1262db08379e?auto=format&fit=crop&w=1600&q=80")
-      center/cover;
+    url("./images/Top.png") center/cover;
 }
 
 .hero-overlay {
