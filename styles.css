@@ -1,0 +1,574 @@
+:root {
+  --bg: #f7f4ef;
+  --surface: #ffffff;
+  --surface-soft: #f0ebe2;
+  --text: #1d1a17;
+  --muted: #655f57;
+  --line: rgba(29, 26, 23, 0.1);
+  --primary: #a31717;
+  --primary-dark: #6d0f0f;
+  --accent: #201d1b;
+  --shadow: 0 16px 40px rgba(32, 29, 27, 0.12);
+  --radius-lg: 28px;
+  --radius-md: 20px;
+  --radius-sm: 14px;
+  --container: min(1120px, calc(100vw - 32px));
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Noto Sans JP", sans-serif;
+  color: var(--text);
+  background:
+    radial-gradient(circle at top, rgba(163, 23, 23, 0.08), transparent 28%),
+    linear-gradient(180deg, #fbf8f3 0%, var(--bg) 100%);
+  line-height: 1.7;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: var(--container);
+  margin: 0 auto;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  backdrop-filter: blur(14px);
+  background: rgba(251, 248, 243, 0.86);
+  border-bottom: 1px solid rgba(29, 26, 23, 0.08);
+}
+
+.header-inner,
+.footer-inner,
+.hero-actions,
+.fee-grid,
+.contact-layout,
+.contact-cards {
+  display: flex;
+  gap: 16px;
+}
+
+.header-inner,
+.footer-inner {
+  align-items: center;
+  justify-content: space-between;
+  min-height: 76px;
+}
+
+.brand,
+.hero h1,
+.section-heading h2,
+.info-card h2,
+.feature-panel h3,
+.practice-card h3,
+.schedule-card h3,
+.fee-card strong,
+.contact-card h3 {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+}
+
+.brand {
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 0.95rem;
+}
+
+.nav-cta {
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: var(--accent);
+  color: #fff;
+}
+
+.hero {
+  position: relative;
+  min-height: 720px;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background:
+    linear-gradient(90deg, rgba(16, 12, 10, 0.72), rgba(16, 12, 10, 0.38)),
+    radial-gradient(circle at bottom left, rgba(163, 23, 23, 0.5), transparent 35%),
+    url("https://images.unsplash.com/photo-1517438984742-1262db08379e?auto=format&fit=crop&w=1600&q=80")
+      center/cover;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(0, 0, 0, 0.12), transparent 30%),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.42), transparent 38%);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  padding: 120px 0 96px;
+}
+
+.eyebrow {
+  margin: 0 0 14px;
+  color: var(--primary);
+  font-size: 0.88rem;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.hero .eyebrow {
+  color: #f3c4c4;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: clamp(2.5rem, 5vw, 4.6rem);
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+}
+
+.hero-text {
+  max-width: 620px;
+  margin: 24px 0 0;
+  font-size: 1.05rem;
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.hero-actions {
+  margin-top: 34px;
+  flex-wrap: wrap;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 52px;
+  padding: 0 24px;
+  border-radius: 999px;
+  font-weight: 700;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.button:hover {
+  transform: translateY(-1px);
+}
+
+.button-primary {
+  background: linear-gradient(135deg, #c92525, var(--primary-dark));
+  color: #fff;
+}
+
+.button-secondary {
+  background: rgba(255, 255, 255, 0.16);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.26);
+}
+
+.section {
+  padding: 88px 0;
+}
+
+.intro-cards {
+  margin-top: -76px;
+  position: relative;
+  z-index: 2;
+}
+
+.card-grid {
+  display: grid;
+  gap: 18px;
+}
+
+.three-col {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.four-col {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.five-col {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.info-card,
+.feature-panel,
+.practice-card,
+.schedule-card,
+.fee-card,
+.contact-card,
+.contact-form,
+.faq-list details {
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(29, 26, 23, 0.07);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow);
+}
+
+.info-card,
+.feature-panel,
+.practice-card,
+.schedule-card,
+.fee-card,
+.contact-card {
+  padding: 24px;
+}
+
+.info-card h2,
+.section-heading h2 {
+  margin: 0 0 12px;
+}
+
+.info-card h2 {
+  font-size: 1.15rem;
+}
+
+.info-card p,
+.section-heading p,
+.feature-panel p,
+.practice-card p,
+.schedule-card p,
+.fee-card p,
+.contact-card p,
+.faq-list p,
+.form-note {
+  margin: 0;
+  color: var(--muted);
+}
+
+.split-section {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+  gap: 26px;
+  align-items: start;
+}
+
+.section-heading {
+  padding-right: 16px;
+}
+
+.centered {
+  max-width: 740px;
+  margin: 0 auto 36px;
+  text-align: center;
+}
+
+.feature-stack {
+  display: grid;
+  gap: 18px;
+}
+
+.feature-panel {
+  background:
+    linear-gradient(145deg, rgba(163, 23, 23, 0.08), rgba(255, 255, 255, 0.96));
+}
+
+.feature-panel h3,
+.practice-card h3,
+.schedule-card h3,
+.contact-card h3 {
+  margin: 0 0 8px;
+}
+
+.accent-section {
+  background:
+    linear-gradient(180deg, rgba(32, 29, 27, 0.98), rgba(50, 30, 26, 0.96)),
+    var(--accent);
+  color: #fff;
+}
+
+.accent-section .eyebrow,
+.contact-section .eyebrow {
+  color: #f2b7b7;
+}
+
+.accent-section .section-heading p,
+.accent-section .practice-card p {
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.practice-card {
+  min-height: 240px;
+  background: rgba(255, 255, 255, 0.07);
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.09);
+  box-shadow: none;
+}
+
+.practice-number {
+  display: inline-flex;
+  margin-bottom: 18px;
+  color: #efb3b3;
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+}
+
+.schedule-grid {
+  margin-bottom: 26px;
+}
+
+.schedule-card {
+  background: linear-gradient(180deg, #fff, #f7f2eb);
+}
+
+.schedule-day {
+  margin-bottom: 6px !important;
+  color: var(--primary) !important;
+  font-weight: 800;
+}
+
+.fee-grid {
+  flex-wrap: wrap;
+}
+
+.fee-card {
+  flex: 1 1 240px;
+  min-height: 186px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.fee-card span {
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.fee-card strong {
+  margin: 12px 0 10px;
+  font-size: clamp(2rem, 4vw, 2.7rem);
+}
+
+.fee-card-dark {
+  background: linear-gradient(145deg, #221f1d, #111111);
+  color: #fff;
+}
+
+.fee-card-dark span,
+.fee-card-dark p {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.faq-layout {
+  align-items: stretch;
+}
+
+.faq-list {
+  display: grid;
+  gap: 14px;
+}
+
+.faq-list details {
+  padding: 0 22px;
+}
+
+.faq-list summary {
+  cursor: pointer;
+  list-style: none;
+  padding: 20px 0;
+  font-weight: 700;
+  position: relative;
+}
+
+.faq-list summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-list summary::after {
+  content: "+";
+  position: absolute;
+  right: 0;
+  top: 20px;
+  font-size: 1.3rem;
+  color: var(--primary);
+}
+
+.faq-list details[open] summary::after {
+  content: "−";
+}
+
+.faq-list details p {
+  padding: 0 0 20px;
+}
+
+.contact-section {
+  color: #fff;
+  background:
+    linear-gradient(180deg, rgba(111, 15, 15, 0.96), rgba(74, 9, 9, 0.98)),
+    var(--primary-dark);
+}
+
+.contact-heading p {
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.contact-layout {
+  align-items: stretch;
+}
+
+.contact-form {
+  flex: 1.2;
+  padding: 28px;
+  background: rgba(255, 255, 255, 0.97);
+}
+
+.contact-form label {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 16px;
+  color: var(--text);
+  font-weight: 700;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid rgba(29, 26, 23, 0.12);
+  border-radius: 14px;
+  font: inherit;
+  color: var(--text);
+  background: #fff;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.form-note {
+  margin-top: 12px;
+  font-size: 0.92rem;
+}
+
+.contact-cards {
+  flex: 0.85;
+  flex-direction: column;
+}
+
+.contact-card {
+  min-height: 0;
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.14);
+  box-shadow: none;
+}
+
+.contact-card p {
+  color: rgba(255, 255, 255, 0.76);
+}
+
+.contact-card a {
+  display: inline-block;
+  margin-top: 12px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.site-footer {
+  background: #14110f;
+  color: rgba(255, 255, 255, 0.74);
+}
+
+.site-footer a {
+  color: #fff;
+}
+
+@media (max-width: 1100px) {
+  .four-col,
+  .five-col {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 860px) {
+  .main-nav {
+    display: none;
+  }
+
+  .hero {
+    min-height: 640px;
+  }
+
+  .three-col,
+  .four-col,
+  .five-col,
+  .split-section {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-layout,
+  .fee-grid {
+    flex-direction: column;
+  }
+
+  .section {
+    padding: 72px 0;
+  }
+
+  .intro-cards {
+    margin-top: -42px;
+  }
+}
+
+@media (max-width: 560px) {
+  .header-inner,
+  .footer-inner {
+    min-height: 68px;
+  }
+
+  .brand {
+    font-size: 1rem;
+  }
+
+  .hero-content {
+    padding: 112px 0 76px;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .button {
+    width: 100%;
+  }
+
+  .info-card,
+  .feature-panel,
+  .practice-card,
+  .schedule-card,
+  .fee-card,
+  .contact-card,
+  .contact-form,
+  .faq-list details {
+    border-radius: 18px;
+  }
+}
