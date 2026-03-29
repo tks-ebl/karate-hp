@@ -10,7 +10,7 @@ if (form) {
     const type = formData.get("type");
     const message = formData.get("message");
 
-    const subject = `【${type}】清心館空手道場へのお問い合わせ`;
+    const subject = `【${type}】糸東流修交会 修義館 堺道場へのお問い合わせ`;
     const body = [
       "空手道場ホームページからお問い合わせがありました。",
       "",
