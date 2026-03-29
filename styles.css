@@ -138,6 +138,12 @@ img {
     radial-gradient(circle at top right, rgba(255, 255, 255, 0.14), transparent 30%);
 }
 
+.sub-hero-faq {
+  background:
+    linear-gradient(135deg, rgba(32, 29, 27, 0.92), rgba(111, 15, 15, 0.88)),
+    radial-gradient(circle at top left, rgba(255, 255, 255, 0.12), transparent 28%);
+}
+
 .sub-hero-overlay {
   position: absolute;
   inset: 0;
@@ -343,8 +349,34 @@ img {
 .practice-card h3,
 .dojo-card h3,
 .schedule-card h3,
+.page-card h3,
 .contact-card h3 {
   margin: 0 0 8px;
+}
+
+.page-grid {
+  align-items: stretch;
+}
+
+.page-card {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  background: linear-gradient(180deg, #fff, #f7f2eb);
+  border: 1px solid rgba(29, 26, 23, 0.07);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow);
+}
+
+.page-card p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.page-card a {
+  color: var(--primary-dark);
+  font-weight: 700;
 }
 
 .dojo-section {
