@@ -220,6 +220,7 @@ img {
 .info-card,
 .feature-panel,
 .practice-card,
+.dojo-card,
 .schedule-card,
 .fee-card,
 .contact-card,
@@ -234,6 +235,7 @@ img {
 .info-card,
 .feature-panel,
 .practice-card,
+.dojo-card,
 .schedule-card,
 .fee-card,
 .contact-card {
@@ -291,9 +293,69 @@ img {
 
 .feature-panel h3,
 .practice-card h3,
+.dojo-card h3,
 .schedule-card h3,
 .contact-card h3 {
   margin: 0 0 8px;
+}
+
+.dojo-section {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.42), rgba(240, 235, 226, 0.7));
+}
+
+.dojo-grid {
+  align-items: stretch;
+}
+
+.dojo-card {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  background: linear-gradient(180deg, #fff, #f7f2eb);
+}
+
+.dojo-card-featured {
+  border-color: rgba(163, 23, 23, 0.18);
+  background:
+    linear-gradient(145deg, rgba(163, 23, 23, 0.08), rgba(255, 255, 255, 0.98));
+}
+
+.dojo-card h3 {
+  font-size: 1.35rem;
+}
+
+.dojo-card p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.dojo-label {
+  display: inline-flex;
+  align-self: flex-start;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgba(163, 23, 23, 0.1);
+  color: var(--primary) !important;
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+.dojo-meta {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 10px;
+  color: var(--text);
+  font-weight: 500;
+}
+
+.dojo-meta a,
+.schedule-card a {
+  color: var(--primary-dark);
+  font-weight: 700;
 }
 
 .accent-section {

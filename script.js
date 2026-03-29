@@ -7,15 +7,17 @@ if (form) {
     const formData = new FormData(form);
     const name = formData.get("name");
     const email = formData.get("email");
+    const branch = formData.get("branch");
     const type = formData.get("type");
     const message = formData.get("message");
 
-    const subject = `【${type}】矢頭派糸東流修交会 修義館 堺分道場へのお問い合わせ`;
+    const subject = `【${type}】矢頭派糸東流修交会 修義館へのお問い合わせ`;
     const body = [
-      "空手道場ホームページからお問い合わせがありました。",
+      "修義館ホームページからお問い合わせがありました。",
       "",
       `お名前: ${name}`,
       `メールアドレス: ${email}`,
+      `ご希望の道場: ${branch}`,
       `お問い合わせ種別: ${type}`,
       "",
       "内容:",
