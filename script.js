@@ -11,9 +11,9 @@ if (form) {
     const type = formData.get("type");
     const message = formData.get("message");
 
-    const subject = `【${type}】矢頭派糸東流修交会 修義館へのお問い合わせ`;
+    const subject = `【${type}】矢頭派糸東流修交会 修義舘へのお問い合わせ`;
     const body = [
-      "修義館ホームページからお問い合わせがありました。",
+      "修義舘ホームページからお問い合わせがありました。",
       "",
       `お名前: ${name}`,
       `メールアドレス: ${email}`,
