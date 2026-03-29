@@ -117,6 +117,35 @@ img {
     url("./images/Top.png") center/cover;
 }
 
+.sub-hero {
+  position: relative;
+  min-height: 420px;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  color: #fff;
+}
+
+.sub-hero-sakai {
+  background:
+    linear-gradient(90deg, rgba(16, 12, 10, 0.74), rgba(16, 12, 10, 0.4)),
+    url("./images/Top.png") center/cover;
+}
+
+.sub-hero-contact {
+  background:
+    linear-gradient(135deg, rgba(111, 15, 15, 0.95), rgba(32, 29, 27, 0.9)),
+    radial-gradient(circle at top right, rgba(255, 255, 255, 0.14), transparent 30%);
+}
+
+.sub-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(0, 0, 0, 0.08), transparent 30%),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.24), transparent 40%);
+}
+
 .hero-overlay {
   position: absolute;
   inset: 0;
@@ -130,6 +159,25 @@ img {
   z-index: 1;
   color: #fff;
   padding: 120px 0 96px;
+}
+
+.sub-hero-content {
+  position: relative;
+  z-index: 1;
+  padding: 120px 0 72px;
+}
+
+.sub-hero-content h1 {
+  margin: 0;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-size: clamp(2.4rem, 5vw, 4rem);
+  line-height: 1.15;
+}
+
+.sub-hero-content p:last-child {
+  max-width: 720px;
+  margin-top: 18px;
+  color: rgba(255, 255, 255, 0.86);
 }
 
 .eyebrow {
@@ -566,6 +614,17 @@ img {
   font-weight: 700;
 }
 
+.contact-page-section {
+  background:
+    linear-gradient(180deg, rgba(111, 15, 15, 0.05), rgba(255, 255, 255, 0));
+}
+
+.footer-links {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
 .site-footer {
   background: #14110f;
   color: rgba(255, 255, 255, 0.74);
@@ -589,6 +648,10 @@ img {
 
   .hero {
     min-height: 640px;
+  }
+
+  .sub-hero {
+    min-height: 360px;
   }
 
   .three-col,
@@ -624,6 +687,10 @@ img {
 
   .hero-content {
     padding: 112px 0 76px;
+  }
+
+  .sub-hero-content {
+    padding: 104px 0 64px;
   }
 
   .hero h1 {
