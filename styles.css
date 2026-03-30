@@ -1036,6 +1036,49 @@ img {
   border-radius: 999px;
 }
 
+.index2-header {
+  position: sticky;
+  top: 0;
+}
+
+.index2-header-titlebar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 58px;
+}
+
+.index2-header-tabs {
+  padding-bottom: 8px;
+}
+
+.index2-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding-bottom: 2px;
+}
+
+.index2-nav a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 14px;
+  white-space: nowrap;
+  border-radius: 0;
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid rgba(29, 26, 23, 0.08);
+  font-size: 0.92rem;
+}
+
+.index2-nav a.is-current {
+  color: #fff;
+  background: linear-gradient(180deg, #b51414, #8a0c0c);
+}
+
 .index2-page {
   background:
     radial-gradient(circle at top, rgba(163, 23, 23, 0.06), transparent 24%),
@@ -1044,7 +1087,7 @@ img {
 
 .index2-hero {
   position: relative;
-  min-height: 340px;
+  min-height: 220px;
   display: grid;
   place-items: center;
   overflow: hidden;
@@ -1063,7 +1106,7 @@ img {
 .index2-hero-content {
   position: relative;
   z-index: 1;
-  padding: 88px 0 56px;
+  padding: 54px 0 34px;
   text-align: center;
   color: #fff;
 }
@@ -1071,13 +1114,13 @@ img {
 .index2-hero-content h1 {
   margin: 0;
   font-family: "Zen Kaku Gothic New", sans-serif;
-  font-size: clamp(2.8rem, 7vw, 4.4rem);
+  font-size: clamp(2.4rem, 6vw, 3.8rem);
   letter-spacing: 0.08em;
 }
 
 .index2-section-tight {
-  padding-top: 28px;
-  padding-bottom: 28px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .index2-card-grid,
@@ -1100,7 +1143,7 @@ img {
 
 .index2-topic-photo,
 .index2-bottom-photo {
-  min-height: 150px;
+  min-height: 138px;
   background:
     linear-gradient(180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.14)),
     url("./images/index2-hero.jpg") center/cover;
@@ -1128,31 +1171,19 @@ img {
 
 .index2-topic-label,
 .index2-bottom-label {
-  padding: 12px 16px;
+  padding: 10px 14px;
   background: linear-gradient(180deg, #b51414, #8a0c0c);
   color: #fff;
   text-align: center;
   font-family: "Zen Kaku Gothic New", sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.15rem;
   font-weight: 700;
-}
-
-.index2-button-row {
-  display: flex;
-  justify-content: center;
-  gap: 16px;
-  margin-top: 18px;
-  flex-wrap: wrap;
-}
-
-.index2-button {
-  min-width: 240px;
 }
 
 .index2-gojokun-wrap {
   max-width: 860px;
   margin: 0 auto;
-  padding: 40px 42px;
+  padding: 30px 34px;
   border: 1px solid rgba(108, 88, 57, 0.2);
   background:
     linear-gradient(180deg, rgba(255, 250, 240, 0.96), rgba(237, 220, 186, 0.95)),
@@ -1168,7 +1199,7 @@ img {
 }
 
 .index2-gojokun-subtitle {
-  margin: 4px 0 26px;
+  margin: 4px 0 20px;
   text-align: center;
   color: #6e5b40;
   font-size: 0.85rem;
@@ -1186,10 +1217,10 @@ img {
   display: flex;
   align-items: center;
   gap: 16px;
-  padding: 14px 0;
+  padding: 10px 0;
   border-bottom: 1px solid rgba(110, 91, 64, 0.2);
   font-family: "Zen Kaku Gothic New", sans-serif;
-  font-size: clamp(1.2rem, 3vw, 1.95rem);
+  font-size: clamp(1.15rem, 2.8vw, 1.7rem);
   font-weight: 700;
 }
 
@@ -1244,6 +1275,10 @@ img {
 }
 
 @media (max-width: 860px) {
+  .index2-header {
+    position: static;
+  }
+
   .nav-toggle {
     display: inline-flex;
   }
@@ -1325,6 +1360,10 @@ img {
 
   .index2-gojokun-wrap {
     padding: 30px 22px;
+  }
+
+  .index2-nav {
+    justify-content: flex-start;
   }
 }
 
