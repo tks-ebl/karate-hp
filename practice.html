@@ -11,39 +11,118 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <header class="site-header"><div class="container header-inner"><a class="brand" href="./index.html">矢頭派糸東流修交会 修義舘</a><button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span><span class="nav-toggle-label">メニュー</span></button><nav class="main-nav" id="site-nav" aria-label="主要メニュー"><a href="./about.html">道場紹介</a><a href="./director.html">館長紹介</a><a href="./practice.html">稽古案内</a><a href="./locations.html">稽古場所一覧</a><a href="./fees.html">月謝・入会案内</a><a href="./faq.html">よくある質問</a><a href="./news.html">お知らせ</a><a href="./contact.html" class="nav-cta">お問い合わせ</a></nav></div></header>
-    <main>
-      <section class="section accent-section">
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="./index.html">矢頭派糸東流修交会 修義舘</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span class="nav-toggle-label">メニュー</span>
+        </button>
+        <nav class="main-nav" id="site-nav" aria-label="主要メニュー">
+          <a href="./about.html">道場紹介</a>
+          <a href="./director.html">館長紹介</a>
+          <a href="./practice.html">稽古案内</a>
+          <a href="./locations.html">稽古場所一覧</a>
+          <a href="./fees.html">月謝・入会案内</a>
+          <a href="./faq.html">よくある質問</a>
+          <a href="./news.html">お知らせ</a>
+          <a href="./contact.html" class="nav-cta">お問い合わせ</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="practice-page">
+      <section class="practice-hero">
+        <div class="practice-hero-overlay"></div>
+        <div class="container practice-hero-content">
+          <p class="eyebrow">Training Guide</p>
+          <h1>稽古案内</h1>
+          <p>礼を大切にしながら、基本・形・組手をバランスよく学びます。初心者も経験者も、それぞれの段階に合わせて丁寧に指導します。</p>
+        </div>
+      </section>
+
+      <section class="section practice-summary-section">
         <div class="container">
-          <div class="section-heading centered">
-            <p class="eyebrow">Training</p>
-            <h2>稽古案内</h2>
-            <p>礼儀、基本、形、組手を大切にしながら、成長段階や目標に合わせて稽古を行います。</p>
+          <div class="practice-summary-grid">
+            <article class="practice-summary-card">
+              <div class="practice-summary-photo practice-photo-basic"></div>
+              <div class="practice-summary-body">
+                <h2>基本稽古</h2>
+                <p>立ち方、突き、受け、蹴りなどを繰り返し、正しい姿勢と身体の使い方を身につけます。</p>
+              </div>
+            </article>
+            <article class="practice-summary-card">
+              <div class="practice-summary-photo practice-photo-kata"></div>
+              <div class="practice-summary-body">
+                <h2>形の稽古</h2>
+                <p>技の流れや意味を理解しながら、集中力と正確さを育てていきます。</p>
+              </div>
+            </article>
+            <article class="practice-summary-card">
+              <div class="practice-summary-photo practice-photo-kumite"></div>
+              <div class="practice-summary-body">
+                <h2>組手の稽古</h2>
+                <p>年齢や経験に応じて安全に行い、判断力や間合い、実践力を養います。</p>
+              </div>
+            </article>
           </div>
-          <div class="card-grid five-col">
-            <article class="practice-card"><span class="practice-number">01</span><h3>礼儀</h3><p>あいさつ、返事、整列、姿勢などを通して礼節を学びます。</p></article>
-            <article class="practice-card"><span class="practice-number">02</span><h3>基本</h3><p>突き、受け、蹴り、立ち方を反復し、正しい身体の使い方を身につけます。</p></article>
-            <article class="practice-card"><span class="practice-number">03</span><h3>形</h3><p>集中力と正確さを養い、技の意味や流れを丁寧に学びます。</p></article>
-            <article class="practice-card"><span class="practice-number">04</span><h3>組手</h3><p>年齢や経験に応じて安全に行い、距離感や判断力を育てます。</p></article>
-            <article class="practice-card"><span class="practice-number">05</span><h3>体験</h3><p>見学、準備運動、基本練習を中心に、初めてでも安心して参加できます。</p></article>
+
+          <div class="practice-action-row">
+            <a class="button button-dark" href="./locations.html">稽古場所一覧について</a>
+            <a class="button button-primary" href="./contact.html">見学・体験の流れ</a>
           </div>
         </div>
       </section>
-      <section class="section">
+
+      <section class="section gojokun-section">
         <div class="container">
-          <div class="section-heading centered">
-            <p class="eyebrow">Gojokun</p>
+          <div class="gojokun-board">
+            <p class="gojokun-subtitle">SHUGIKAN GOJOKUN</p>
             <h2>修義舘五条訓</h2>
-            <p>ここは本番文言に差し替えしやすいよう、五条訓を掲載するためのページ構成を用意しています。</p>
+            <ol class="gojokun-list">
+              <li>誠の心を養うこと</li>
+              <li>礼儀を重んずること</li>
+              <li>努力を惜しまぬこと</li>
+              <li>心身を鍛えること</li>
+              <li>友情を大切にすること</li>
+            </ol>
           </div>
-          <div class="card-grid three-col">
-            <article class="feature-panel"><h3>一、礼節を重んずること</h3><p>日々のあいさつや所作を通じて、人を敬う心を育てます。</p></article>
-            <article class="feature-panel"><h3>一、努力を怠らぬこと</h3><p>小さな積み重ねを大切にし、継続する力を養います。</p></article>
-            <article class="feature-panel"><h3>一、心身を鍛えること</h3><p>技術だけでなく、強い心と健やかな身体づくりも目指します。</p></article>
+        </div>
+      </section>
+
+      <section class="section practice-detail-section">
+        <div class="container">
+          <div class="practice-detail-grid">
+            <article class="practice-detail-card">
+              <div class="practice-detail-head">強化練習について</div>
+              <div class="practice-detail-photo practice-photo-train"></div>
+              <div class="practice-detail-body">
+                <p>通常稽古後の強化練習では、試合や昇級審査を見据えた内容にも取り組みます。</p>
+              </div>
+            </article>
+            <article class="practice-detail-card">
+              <div class="practice-detail-head">見学・体験の流れ</div>
+              <div class="practice-detail-photo practice-photo-trial"></div>
+              <div class="practice-detail-body">
+                <p>見学、準備運動、基本練習を中心に、初めてでも安心して参加できる流れでご案内します。</p>
+              </div>
+            </article>
           </div>
         </div>
       </section>
     </main>
-    <footer class="site-footer"><div class="container footer-inner"><p>© 2026 矢頭派糸東流修交会 修義舘</p><div class="footer-links"><a href="./fees.html">月謝・入会案内</a><a href="./contact.html">お問い合わせ</a></div></div></footer><script src="./script.js"></script>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© 2026 矢頭派糸東流修交会 修義舘</p>
+        <div class="footer-links">
+          <a href="./fees.html">月謝・入会案内</a>
+          <a href="./contact.html">お問い合わせ</a>
+        </div>
+      </div>
+    </footer>
+    <script src="./script.js"></script>
   </body>
 </html>

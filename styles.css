@@ -686,6 +686,198 @@ img {
     linear-gradient(180deg, rgba(111, 15, 15, 0.05), rgba(255, 255, 255, 0));
 }
 
+.practice-page {
+  background:
+    linear-gradient(180deg, #f5f1ea 0%, #fbf8f3 36%, #f4efe6 100%);
+}
+
+.practice-hero {
+  position: relative;
+  min-height: 360px;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background:
+    linear-gradient(90deg, rgba(16, 12, 10, 0.5), rgba(16, 12, 10, 0.18)),
+    url("./images/Top.png") center 35% / cover;
+}
+
+.practice-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.16), rgba(0, 0, 0, 0.24));
+}
+
+.practice-hero-content {
+  position: relative;
+  z-index: 1;
+  padding: 100px 0 70px;
+  text-align: center;
+  color: #fff;
+}
+
+.practice-hero-content h1 {
+  margin: 0;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-size: clamp(2.5rem, 6vw, 4.2rem);
+}
+
+.practice-hero-content p:last-child {
+  max-width: 780px;
+  margin: 14px auto 0;
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.practice-summary-section {
+  padding-top: 38px;
+}
+
+.practice-summary-grid,
+.practice-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.practice-summary-card,
+.practice-detail-card {
+  overflow: hidden;
+  border: 1px solid rgba(29, 26, 23, 0.08);
+  border-radius: 0;
+  background: #fff;
+  box-shadow: 0 8px 24px rgba(32, 29, 27, 0.08);
+}
+
+.practice-summary-photo,
+.practice-detail-photo {
+  min-height: 170px;
+  background:
+    linear-gradient(180deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)),
+    url("./images/Top.png") center/cover;
+}
+
+.practice-photo-basic {
+  background-position: left center;
+}
+
+.practice-photo-kata {
+  background-position: center center;
+}
+
+.practice-photo-kumite {
+  background-position: right center;
+}
+
+.practice-photo-train {
+  background-position: 30% center;
+}
+
+.practice-photo-trial {
+  background-position: 75% center;
+}
+
+.practice-summary-body,
+.practice-detail-body {
+  padding: 18px 18px 20px;
+}
+
+.practice-summary-body h2 {
+  margin: 0 0 10px;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-size: 1.4rem;
+}
+
+.practice-summary-body p,
+.practice-detail-body p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.practice-action-row {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 22px;
+  flex-wrap: wrap;
+}
+
+.button-dark {
+  background: linear-gradient(180deg, #302d36, #1d1a22);
+  color: #fff;
+}
+
+.gojokun-section {
+  padding-top: 34px;
+  padding-bottom: 34px;
+}
+
+.gojokun-board {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 40px 44px;
+  border: 1px solid rgba(108, 88, 57, 0.22);
+  background:
+    linear-gradient(180deg, rgba(255, 252, 243, 0.94), rgba(242, 229, 203, 0.94)),
+    radial-gradient(circle at top, rgba(255, 255, 255, 0.55), transparent 42%);
+  box-shadow: 0 16px 34px rgba(79, 63, 38, 0.14);
+}
+
+.gojokun-subtitle {
+  margin: 0;
+  text-align: center;
+  color: #6e5b40;
+  font-size: 0.8rem;
+  letter-spacing: 0.16em;
+  font-weight: 700;
+}
+
+.gojokun-board h2 {
+  margin: 6px 0 22px;
+  text-align: center;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-size: clamp(2rem, 5vw, 3.2rem);
+}
+
+.gojokun-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 12px;
+}
+
+.gojokun-list li {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(110, 91, 64, 0.2);
+  font-size: clamp(1.2rem, 3vw, 1.8rem);
+  font-weight: 700;
+  color: #2c241b;
+}
+
+.gojokun-list li::before {
+  content: "";
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  flex: 0 0 28px;
+  background: linear-gradient(180deg, #b51616, #860d0d);
+  box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.28);
+}
+
+.practice-detail-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.practice-detail-head {
+  padding: 12px 16px;
+  background: linear-gradient(180deg, #b51414, #8a0c0c);
+  color: #fff;
+  font-weight: 700;
+}
+
 .footer-links {
   display: flex;
   gap: 18px;
@@ -704,6 +896,10 @@ img {
 @media (max-width: 1100px) {
   .four-col,
   .five-col {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .practice-summary-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
@@ -760,7 +956,9 @@ img {
   .three-col,
   .four-col,
   .five-col,
-  .split-section {
+  .split-section,
+  .practice-summary-grid,
+  .practice-detail-grid {
     grid-template-columns: 1fr;
   }
 
@@ -775,6 +973,10 @@ img {
 
   .intro-cards {
     margin-top: -42px;
+  }
+
+  .gojokun-board {
+    padding: 30px 22px;
   }
 }
 
