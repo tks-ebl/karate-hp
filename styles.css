@@ -686,6 +686,151 @@ img {
     linear-gradient(180deg, rgba(111, 15, 15, 0.05), rgba(255, 255, 255, 0));
 }
 
+.simple-page {
+  background:
+    linear-gradient(180deg, #f5f1ea 0%, #fbf8f3 34%, #f4efe6 100%);
+}
+
+.simple-hero {
+  position: relative;
+  min-height: 340px;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background:
+    linear-gradient(90deg, rgba(16, 12, 10, 0.46), rgba(16, 12, 10, 0.18)),
+    url("./images/Top.png") center/cover;
+}
+
+.simple-hero-short {
+  min-height: 280px;
+}
+
+.simple-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.18), rgba(0, 0, 0, 0.18));
+}
+
+.simple-hero-content {
+  position: relative;
+  z-index: 1;
+  padding: 96px 0 56px;
+  text-align: center;
+  color: #fff;
+}
+
+.simple-hero-content h1 {
+  margin: 0;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-size: clamp(2.3rem, 5vw, 4rem);
+}
+
+.simple-hero-content p:last-child {
+  max-width: 760px;
+  margin: 14px auto 0;
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.simple-links-section {
+  padding-top: 34px;
+}
+
+.simple-link-grid,
+.simple-info-grid,
+.top-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.simple-link-card,
+.simple-info-card {
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid rgba(29, 26, 23, 0.08);
+  box-shadow: 0 8px 24px rgba(32, 29, 27, 0.08);
+}
+
+.simple-link-photo {
+  min-height: 150px;
+  background:
+    linear-gradient(180deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)),
+    url("./images/Top.png") center/cover;
+}
+
+.simple-photo-about {
+  background-position: 18% center;
+}
+
+.simple-photo-practice {
+  background-position: center center;
+}
+
+.simple-photo-locations {
+  background-position: 82% center;
+}
+
+.simple-link-head {
+  padding: 12px 16px;
+  background: linear-gradient(180deg, #b51414, #8a0c0c);
+  color: #fff;
+  font-weight: 700;
+}
+
+.simple-link-body {
+  padding: 18px;
+}
+
+.simple-link-body p,
+.simple-info-card p,
+.simple-board p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.simple-link-body a,
+.simple-inline-link {
+  display: inline-block;
+  margin-top: 12px;
+  color: var(--primary-dark);
+  font-weight: 700;
+}
+
+.simple-button-row {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 22px;
+  flex-wrap: wrap;
+}
+
+.top-summary-section,
+.simple-content-section {
+  padding-top: 34px;
+}
+
+.simple-info-card {
+  padding: 24px;
+}
+
+.simple-info-card h2,
+.simple-board h2 {
+  margin: 0 0 10px;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+}
+
+.simple-board {
+  max-width: 760px;
+  margin: 28px auto 0;
+  padding: 30px 32px;
+  border: 1px solid rgba(108, 88, 57, 0.22);
+  background:
+    linear-gradient(180deg, rgba(255, 252, 243, 0.94), rgba(242, 229, 203, 0.94));
+  box-shadow: 0 16px 34px rgba(79, 63, 38, 0.14);
+  text-align: center;
+}
+
 .practice-page {
   background:
     linear-gradient(180deg, #f5f1ea 0%, #fbf8f3 36%, #f4efe6 100%);
@@ -899,7 +1044,10 @@ img {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .practice-summary-grid {
+  .practice-summary-grid,
+  .simple-link-grid,
+  .simple-info-grid,
+  .top-summary-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
@@ -958,7 +1106,10 @@ img {
   .five-col,
   .split-section,
   .practice-summary-grid,
-  .practice-detail-grid {
+  .practice-detail-grid,
+  .simple-link-grid,
+  .simple-info-grid,
+  .top-summary-grid {
     grid-template-columns: 1fr;
   }
 
