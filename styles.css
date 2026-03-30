@@ -1053,25 +1053,28 @@ img {
 }
 
 .index2-nav {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  align-items: stretch;
+  gap: 4px;
   overflow-x: visible;
   padding-bottom: 2px;
 }
 
 .index2-nav a {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px 14px;
-  white-space: nowrap;
+  min-width: 0;
+  min-height: 38px;
+  padding: 8px 4px;
+  white-space: normal;
+  text-align: center;
+  line-height: 1.2;
   border-radius: 0;
   background: rgba(255, 255, 255, 0.78);
   border: 1px solid rgba(29, 26, 23, 0.08);
-  font-size: 0.92rem;
+  font-size: 0.78rem;
 }
 
 .index2-nav a.is-current {
@@ -1311,13 +1314,14 @@ img {
   }
 
   .index2-nav {
-    justify-content: center;
-    gap: 6px;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+    gap: 3px;
   }
 
   .index2-nav a {
-    padding: 8px 10px;
-    font-size: 0.8rem;
+    min-height: 34px;
+    padding: 6px 2px;
+    font-size: 0.63rem;
   }
 
   .index2-card-grid {
@@ -1384,12 +1388,14 @@ img {
   }
 
   .index2-nav {
-    gap: 4px;
+    gap: 2px;
   }
 
   .index2-nav a {
-    padding: 7px 8px;
-    font-size: 0.72rem;
+    min-height: 30px;
+    padding: 5px 1px;
+    font-size: 0.54rem;
+    letter-spacing: -0.02em;
   }
 
   .index2-card-grid {
