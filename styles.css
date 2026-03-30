@@ -1057,8 +1057,8 @@ img {
   align-items: center;
   justify-content: center;
   gap: 8px;
-  flex-wrap: nowrap;
-  overflow-x: auto;
+  flex-wrap: wrap;
+  overflow-x: visible;
   padding-bottom: 2px;
 }
 
@@ -1119,14 +1119,14 @@ img {
 }
 
 .index2-section-tight {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
 .index2-card-grid,
 .index2-bottom-grid {
   display: grid;
-  gap: 18px;
+  gap: 12px;
 }
 
 .index2-card-grid {
@@ -1143,7 +1143,7 @@ img {
 
 .index2-topic-photo,
 .index2-bottom-photo {
-  min-height: 138px;
+  min-height: 112px;
   background:
     linear-gradient(180deg, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.12)),
     center/cover no-repeat;
@@ -1189,7 +1189,7 @@ img {
   display: block;
   width: 100%;
   height: auto;
-  box-shadow: 0 18px 36px rgba(79, 63, 38, 0.14);
+  box-shadow: 0 12px 24px rgba(79, 63, 38, 0.12);
 }
 
 .index2-bottom-grid {
@@ -1285,9 +1285,7 @@ img {
   .practice-detail-grid,
   .simple-link-grid,
   .simple-info-grid,
-  .top-summary-grid,
-  .index2-card-grid,
-  .index2-bottom-grid {
+  .top-summary-grid {
     grid-template-columns: 1fr;
   }
 
@@ -1313,7 +1311,60 @@ img {
   }
 
   .index2-nav {
-    justify-content: flex-start;
+    justify-content: center;
+    gap: 6px;
+  }
+
+  .index2-nav a {
+    padding: 8px 10px;
+    font-size: 0.8rem;
+  }
+
+  .index2-card-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  .index2-bottom-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  .index2-topic-photo,
+  .index2-bottom-photo {
+    min-height: 82px;
+  }
+
+  .index2-topic-label,
+  .index2-bottom-label {
+    padding: 7px 6px;
+    font-size: 0.88rem;
+    line-height: 1.25;
+  }
+
+  .index2-hero {
+    min-height: 150px;
+  }
+
+  .index2-hero-content {
+    padding: 28px 0 18px;
+  }
+
+  .index2-hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .index2-section-tight {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  .index2-header-titlebar {
+    min-height: 48px;
+  }
+
+  .index2-header-tabs {
+    padding-bottom: 4px;
   }
 }
 
@@ -1325,6 +1376,60 @@ img {
 
   .brand {
     font-size: 1rem;
+  }
+
+  .index2-header-titlebar .brand {
+    font-size: 0.92rem;
+    letter-spacing: 0.03em;
+  }
+
+  .index2-nav {
+    gap: 4px;
+  }
+
+  .index2-nav a {
+    padding: 7px 8px;
+    font-size: 0.72rem;
+  }
+
+  .index2-card-grid {
+    gap: 6px;
+  }
+
+  .index2-bottom-grid {
+    gap: 6px;
+  }
+
+  .index2-topic-photo,
+  .index2-bottom-photo {
+    min-height: 64px;
+  }
+
+  .index2-topic-label,
+  .index2-bottom-label {
+    padding: 6px 4px;
+    font-size: 0.74rem;
+  }
+
+  .index2-hero {
+    min-height: 118px;
+  }
+
+  .index2-hero-content {
+    padding: 22px 0 14px;
+  }
+
+  .index2-hero-content h1 {
+    font-size: 1.75rem;
+  }
+
+  .index2-section-tight {
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+
+  .index2-gojokun-image {
+    box-shadow: none;
   }
 
   .hero-content {
