@@ -1029,6 +1029,192 @@ img {
   flex-wrap: wrap;
 }
 
+.main-nav a.is-current {
+  color: #fff;
+  background: linear-gradient(180deg, #b51414, #8a0c0c);
+  padding: 10px 14px;
+  border-radius: 999px;
+}
+
+.index2-page {
+  background:
+    radial-gradient(circle at top, rgba(163, 23, 23, 0.06), transparent 24%),
+    linear-gradient(180deg, #f8f4ed 0%, #f4eee5 100%);
+}
+
+.index2-hero {
+  position: relative;
+  min-height: 340px;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background:
+    linear-gradient(90deg, rgba(22, 16, 12, 0.46), rgba(22, 16, 12, 0.12)),
+    url("./images/index2-hero.jpg") center 38% / cover;
+}
+
+.index2-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.18));
+}
+
+.index2-hero-content {
+  position: relative;
+  z-index: 1;
+  padding: 88px 0 56px;
+  text-align: center;
+  color: #fff;
+}
+
+.index2-hero-content h1 {
+  margin: 0;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-size: clamp(2.8rem, 7vw, 4.4rem);
+  letter-spacing: 0.08em;
+}
+
+.index2-section-tight {
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
+
+.index2-card-grid,
+.index2-bottom-grid {
+  display: grid;
+  gap: 18px;
+}
+
+.index2-card-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.index2-topic-card,
+.index2-bottom-card {
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid rgba(29, 26, 23, 0.08);
+  box-shadow: 0 10px 26px rgba(32, 29, 27, 0.08);
+}
+
+.index2-topic-photo,
+.index2-bottom-photo {
+  min-height: 150px;
+  background:
+    linear-gradient(180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.14)),
+    url("./images/index2-hero.jpg") center/cover;
+}
+
+.index2-photo-basic {
+  background-position: left center;
+}
+
+.index2-photo-kata {
+  background-position: center center;
+}
+
+.index2-photo-kumite {
+  background-position: right center;
+}
+
+.index2-photo-train {
+  background-position: 24% center;
+}
+
+.index2-photo-trial {
+  background-position: 70% center;
+}
+
+.index2-topic-label,
+.index2-bottom-label {
+  padding: 12px 16px;
+  background: linear-gradient(180deg, #b51414, #8a0c0c);
+  color: #fff;
+  text-align: center;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.index2-button-row {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 18px;
+  flex-wrap: wrap;
+}
+
+.index2-button {
+  min-width: 240px;
+}
+
+.index2-gojokun-wrap {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 40px 42px;
+  border: 1px solid rgba(108, 88, 57, 0.2);
+  background:
+    linear-gradient(180deg, rgba(255, 250, 240, 0.96), rgba(237, 220, 186, 0.95)),
+    radial-gradient(circle at top, rgba(255, 255, 255, 0.5), transparent 42%);
+  box-shadow: 0 18px 36px rgba(79, 63, 38, 0.14);
+}
+
+.index2-gojokun-title {
+  margin: 0;
+  text-align: center;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-size: clamp(2.2rem, 5vw, 3.4rem);
+}
+
+.index2-gojokun-subtitle {
+  margin: 4px 0 26px;
+  text-align: center;
+  color: #6e5b40;
+  font-size: 0.85rem;
+  letter-spacing: 0.16em;
+  font-weight: 700;
+}
+
+.index2-gojokun-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.index2-gojokun-list li {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(110, 91, 64, 0.2);
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-size: clamp(1.2rem, 3vw, 1.95rem);
+  font-weight: 700;
+}
+
+.index2-gojokun-list li:last-child {
+  border-bottom: 0;
+}
+
+.index2-gojokun-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  flex: 0 0 34px;
+  border-radius: 999px;
+  background: linear-gradient(180deg, #b51616, #860d0d);
+  color: #fff;
+  font-size: 1rem;
+  box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.28);
+}
+
+.index2-bottom-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .site-footer {
   background: #14110f;
   color: rgba(255, 255, 255, 0.74);
@@ -1047,8 +1233,13 @@ img {
   .practice-summary-grid,
   .simple-link-grid,
   .simple-info-grid,
-  .top-summary-grid {
+  .top-summary-grid,
+  .index2-card-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .index2-bottom-grid {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -1109,7 +1300,9 @@ img {
   .practice-detail-grid,
   .simple-link-grid,
   .simple-info-grid,
-  .top-summary-grid {
+  .top-summary-grid,
+  .index2-card-grid,
+  .index2-bottom-grid {
     grid-template-columns: 1fr;
   }
 
@@ -1127,6 +1320,10 @@ img {
   }
 
   .gojokun-board {
+    padding: 30px 22px;
+  }
+
+  .index2-gojokun-wrap {
     padding: 30px 22px;
   }
 }
