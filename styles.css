@@ -1093,7 +1093,7 @@ img {
   overflow: hidden;
   background:
     linear-gradient(90deg, rgba(22, 16, 12, 0.46), rgba(22, 16, 12, 0.12)),
-    url("./images/index2-hero.jpg") center 38% / cover;
+    url("./images/稽古案内-TOP.jpg") center 38% / cover;
 }
 
 .index2-hero::after {
@@ -1145,28 +1145,28 @@ img {
 .index2-bottom-photo {
   min-height: 138px;
   background:
-    linear-gradient(180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.14)),
-    url("./images/index2-hero.jpg") center/cover;
+    linear-gradient(180deg, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.12)),
+    center/cover no-repeat;
 }
 
 .index2-photo-basic {
-  background-position: left center;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.12)), url("./images/稽古案内-基本稽古.jpg");
 }
 
 .index2-photo-kata {
-  background-position: center center;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.12)), url("./images/稽古案内-型稽古.jpg");
 }
 
 .index2-photo-kumite {
-  background-position: right center;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.12)), url("./images/稽古案内-組手稽古.jpg");
 }
 
 .index2-photo-train {
-  background-position: 24% center;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.12)), url("./images/稽古案内-強化練習.jpg");
 }
 
 .index2-photo-trial {
-  background-position: 70% center;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.12)), url("./images/入会案内.jpg");
 }
 
 .index2-topic-label,
@@ -1180,66 +1180,16 @@ img {
   font-weight: 700;
 }
 
-.index2-gojokun-wrap {
+.index2-gojokun-image-wrap {
   max-width: 860px;
   margin: 0 auto;
-  padding: 30px 34px;
-  border: 1px solid rgba(108, 88, 57, 0.2);
-  background:
-    linear-gradient(180deg, rgba(255, 250, 240, 0.96), rgba(237, 220, 186, 0.95)),
-    radial-gradient(circle at top, rgba(255, 255, 255, 0.5), transparent 42%);
+}
+
+.index2-gojokun-image {
+  display: block;
+  width: 100%;
+  height: auto;
   box-shadow: 0 18px 36px rgba(79, 63, 38, 0.14);
-}
-
-.index2-gojokun-title {
-  margin: 0;
-  text-align: center;
-  font-family: "Zen Kaku Gothic New", sans-serif;
-  font-size: clamp(2.2rem, 5vw, 3.4rem);
-}
-
-.index2-gojokun-subtitle {
-  margin: 4px 0 20px;
-  text-align: center;
-  color: #6e5b40;
-  font-size: 0.85rem;
-  letter-spacing: 0.16em;
-  font-weight: 700;
-}
-
-.index2-gojokun-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.index2-gojokun-list li {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  padding: 10px 0;
-  border-bottom: 1px solid rgba(110, 91, 64, 0.2);
-  font-family: "Zen Kaku Gothic New", sans-serif;
-  font-size: clamp(1.15rem, 2.8vw, 1.7rem);
-  font-weight: 700;
-}
-
-.index2-gojokun-list li:last-child {
-  border-bottom: 0;
-}
-
-.index2-gojokun-number {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 34px;
-  height: 34px;
-  flex: 0 0 34px;
-  border-radius: 999px;
-  background: linear-gradient(180deg, #b51616, #860d0d);
-  color: #fff;
-  font-size: 1rem;
-  box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.28);
 }
 
 .index2-bottom-grid {
@@ -1358,8 +1308,8 @@ img {
     padding: 30px 22px;
   }
 
-  .index2-gojokun-wrap {
-    padding: 30px 22px;
+  .index2-gojokun-image-wrap {
+    max-width: 100%;
   }
 
   .index2-nav {
