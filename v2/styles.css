@@ -1258,13 +1258,35 @@ img {
   gap: 16px;
 }
 
+.home2-schedule-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.home2-schedule-grid .schedule-card {
+  padding: 18px 14px;
+}
+
+.home2-schedule-grid .schedule-card h3 {
+  font-size: 1rem;
+}
+
+.home2-schedule-grid .schedule-day {
+  font-size: 1.1rem;
+}
+
 .home2-fee-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
   justify-content: center;
+  width: min(520px, 100%);
+  margin: 0 auto;
 }
 
 .home2-fee-grid .fee-card {
-  min-width: 220px;
   text-align: center;
+  width: 100%;
 }
 
 .home2-experience-card {
@@ -1498,6 +1520,44 @@ img {
     min-height: 380px;
   }
 
+  .home2-feature-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .home2-schedule-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  .home2-schedule-grid .schedule-card {
+    padding: 14px 8px;
+  }
+
+  .home2-schedule-grid .schedule-card h3 {
+    font-size: 0.82rem;
+    line-height: 1.35;
+  }
+
+  .home2-schedule-grid .schedule-day {
+    font-size: 0.95rem;
+  }
+
+  .home2-schedule-grid .schedule-card p {
+    font-size: 0.76rem;
+    line-height: 1.4;
+  }
+
+  .home2-fee-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+    width: min(420px, 100%);
+  }
+
+  .home2-fee-grid .fee-card {
+    padding: 16px 10px;
+  }
+
   .home2-experience-card {
     grid-template-columns: 1fr;
   }
@@ -1571,6 +1631,62 @@ img {
 
   .home2-hero {
     min-height: 320px;
+  }
+
+  .home2-feature-grid {
+    gap: 6px;
+  }
+
+  .home2-feature-grid .info-card {
+    padding: 14px 10px;
+  }
+
+  .home2-feature-grid .info-card h3 {
+    font-size: 0.82rem;
+    line-height: 1.35;
+  }
+
+  .home2-feature-grid .info-card p {
+    font-size: 0.7rem;
+    line-height: 1.45;
+  }
+
+  .home2-schedule-grid {
+    gap: 6px;
+  }
+
+  .home2-schedule-grid .schedule-card {
+    padding: 10px 6px;
+  }
+
+  .home2-schedule-grid .schedule-card h3 {
+    font-size: 0.68rem;
+  }
+
+  .home2-schedule-grid .schedule-day {
+    font-size: 0.8rem;
+  }
+
+  .home2-schedule-grid .schedule-card p {
+    font-size: 0.62rem;
+    line-height: 1.35;
+  }
+
+  .home2-fee-grid {
+    gap: 6px;
+    width: min(320px, 100%);
+  }
+
+  .home2-fee-grid .fee-card {
+    padding: 12px 8px;
+  }
+
+  .home2-fee-grid .fee-card span {
+    font-size: 0.68rem;
+  }
+
+  .home2-fee-grid .fee-card strong {
+    font-size: 1.35rem;
   }
 
   .home2-hero-content {
