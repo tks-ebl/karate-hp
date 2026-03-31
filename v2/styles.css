@@ -1199,6 +1199,127 @@ img {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.home2-page {
+  background: linear-gradient(180deg, #fbf8f3 0%, #f4eee6 100%);
+}
+
+.home2-hero {
+  position: relative;
+  min-height: 440px;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background:
+    linear-gradient(90deg, rgba(20, 14, 10, 0.58), rgba(20, 14, 10, 0.18)),
+    url("./images/トップページ-TOP.jpg") center 34% / cover;
+}
+
+.home2-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.2));
+}
+
+.home2-hero-content {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  padding: 72px 0 46px;
+}
+
+.home2-hero-content h1 {
+  margin: 0;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-size: clamp(2.1rem, 5vw, 3.8rem);
+  line-height: 1.2;
+}
+
+.home2-hero-content p {
+  max-width: 620px;
+  margin: 16px 0 0;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.home2-hero-actions {
+  display: flex;
+  gap: 14px;
+  margin-top: 24px;
+  flex-wrap: wrap;
+}
+
+.home2-compact-section {
+  padding-top: 26px;
+  padding-bottom: 26px;
+}
+
+.home2-feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.home2-fee-grid {
+  justify-content: center;
+}
+
+.home2-fee-grid .fee-card {
+  min-width: 220px;
+  text-align: center;
+}
+
+.home2-experience-card {
+  display: grid;
+  grid-template-columns: 1.05fr 1.2fr;
+  overflow: hidden;
+  border: 1px solid rgba(29, 26, 23, 0.08);
+  background: #fff;
+  box-shadow: 0 12px 28px rgba(32, 29, 27, 0.08);
+}
+
+.home2-experience-text {
+  padding: 28px;
+}
+
+.home2-experience-text h2 {
+  margin: 0 0 10px;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+}
+
+.home2-experience-text p:last-of-type {
+  margin-bottom: 20px;
+}
+
+.home2-experience-photo {
+  min-height: 250px;
+  background:
+    linear-gradient(180deg, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.08)),
+    url("./images/トップページ-見学.jpg") center/cover;
+}
+
+.home2-contact-band {
+  padding-top: 24px;
+  padding-bottom: 30px;
+}
+
+.home2-contact-band-inner {
+  padding: 28px 24px;
+  background:
+    linear-gradient(135deg, rgba(140, 13, 13, 0.96), rgba(95, 10, 10, 0.94)),
+    radial-gradient(circle at top, rgba(255, 255, 255, 0.12), transparent 34%);
+  color: #fff;
+  text-align: center;
+}
+
+.home2-contact-band-inner h2 {
+  margin: 0 0 8px;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+}
+
+.home2-contact-band-inner p {
+  margin: 0 0 18px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
 .site-footer {
   background: #14110f;
   color: rgba(255, 255, 255, 0.74);
@@ -1218,7 +1339,8 @@ img {
   .simple-link-grid,
   .simple-info-grid,
   .top-summary-grid,
-  .index2-card-grid {
+  .index2-card-grid,
+  .home2-feature-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -1288,7 +1410,8 @@ img {
   .practice-detail-grid,
   .simple-link-grid,
   .simple-info-grid,
-  .top-summary-grid {
+  .top-summary-grid,
+  .home2-feature-grid {
     grid-template-columns: 1fr;
   }
 
@@ -1370,6 +1493,14 @@ img {
   .index2-header-tabs {
     padding-bottom: 4px;
   }
+
+  .home2-hero {
+    min-height: 380px;
+  }
+
+  .home2-experience-card {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 560px) {
@@ -1436,6 +1567,26 @@ img {
 
   .index2-gojokun-image {
     box-shadow: none;
+  }
+
+  .home2-hero {
+    min-height: 320px;
+  }
+
+  .home2-hero-content {
+    padding: 48px 0 30px;
+  }
+
+  .home2-hero-actions {
+    flex-direction: column;
+  }
+
+  .home2-experience-text {
+    padding: 20px;
+  }
+
+  .home2-experience-photo {
+    min-height: 180px;
   }
 
   .hero-content {
