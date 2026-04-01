@@ -154,7 +154,7 @@ img {
 
 .sub-hero {
   position: relative;
-  min-height: 420px;
+  min-height: 220px;
   display: grid;
   place-items: center;
   overflow: hidden;
@@ -205,13 +205,13 @@ img {
 .sub-hero-content {
   position: relative;
   z-index: 1;
-  padding: 120px 0 72px;
+  padding: 54px 0 34px;
 }
 
 .sub-hero-content h1 {
   margin: 0;
   font-family: "Zen Kaku Gothic New", sans-serif;
-  font-size: clamp(2.4rem, 5vw, 4rem);
+  font-size: clamp(2.3rem, 5vw, 3.8rem);
   line-height: 1.15;
 }
 
@@ -693,7 +693,7 @@ img {
 
 .simple-hero {
   position: relative;
-  min-height: 340px;
+  min-height: 220px;
   display: grid;
   place-items: center;
   overflow: hidden;
@@ -703,7 +703,7 @@ img {
 }
 
 .simple-hero-short {
-  min-height: 280px;
+  min-height: 220px;
 }
 
 .simple-hero-overlay {
@@ -715,7 +715,7 @@ img {
 .simple-hero-content {
   position: relative;
   z-index: 1;
-  padding: 96px 0 56px;
+  padding: 54px 0 34px;
   text-align: center;
   color: #fff;
 }
@@ -723,7 +723,7 @@ img {
 .simple-hero-content h1 {
   margin: 0;
   font-family: "Zen Kaku Gothic New", sans-serif;
-  font-size: clamp(2.3rem, 5vw, 4rem);
+  font-size: clamp(2.3rem, 5vw, 3.8rem);
 }
 
 .simple-hero-content p:last-child {
@@ -1542,7 +1542,7 @@ img {
   }
 
   .sub-hero {
-    min-height: 360px;
+    min-height: 150px;
   }
 
   .three-col,
@@ -1615,6 +1615,21 @@ img {
 
   .index2-hero {
     min-height: 150px;
+  }
+
+  .simple-hero,
+  .simple-hero-short {
+    min-height: 150px;
+  }
+
+  .simple-hero-content,
+  .sub-hero-content {
+    padding: 28px 0 18px;
+  }
+
+  .simple-hero-content h1,
+  .sub-hero-content h1 {
+    font-size: 2rem;
   }
 
   .index2-hero-content {
@@ -1734,11 +1749,27 @@ img {
     min-height: 118px;
   }
 
+  .simple-hero,
+  .simple-hero-short,
+  .sub-hero {
+    min-height: 118px;
+  }
+
   .index2-hero-content {
     padding: 22px 0 14px;
   }
 
+  .simple-hero-content,
+  .sub-hero-content {
+    padding: 22px 0 14px;
+  }
+
   .index2-hero-content h1 {
+    font-size: 1.75rem;
+  }
+
+  .simple-hero-content h1,
+  .sub-hero-content h1 {
     font-size: 1.75rem;
   }
 
@@ -1829,10 +1860,6 @@ img {
 
   .hero-content {
     padding: 112px 0 76px;
-  }
-
-  .sub-hero-content {
-    padding: 104px 0 64px;
   }
 
   .hero h1 {
