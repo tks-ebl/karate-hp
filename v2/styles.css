@@ -1256,8 +1256,8 @@ img {
 }
 
 .home2-compact-section {
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .home2-feature-grid {
