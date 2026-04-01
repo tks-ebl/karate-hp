@@ -1203,6 +1203,14 @@ img {
   background: linear-gradient(180deg, #fbf8f3 0%, #f4eee6 100%);
 }
 
+.home2-page .section-heading.centered {
+  margin-bottom: 16px;
+}
+
+.home2-page .section-heading.centered h2 {
+  margin-bottom: 6px;
+}
+
 .home2-hero {
   position: relative;
   min-height: 440px;
@@ -1224,7 +1232,7 @@ img {
   position: relative;
   z-index: 1;
   color: #fff;
-  padding: 72px 0 46px;
+  padding: 60px 0 36px;
 }
 
 .home2-hero-content h1 {
@@ -1243,42 +1251,63 @@ img {
 .home2-hero-actions {
   display: flex;
   gap: 14px;
-  margin-top: 24px;
+  margin-top: 18px;
   flex-wrap: wrap;
 }
 
 .home2-compact-section {
-  padding-top: 26px;
-  padding-bottom: 26px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .home2-feature-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 16px;
+  gap: 10px;
+}
+
+.home2-feature-grid .info-card {
+  padding: 16px 14px;
+}
+
+.home2-feature-grid .info-card h3 {
+  margin: 0 0 6px;
+  line-height: 1.35;
+}
+
+.home2-feature-grid .info-card p {
+  line-height: 1.5;
 }
 
 .home2-schedule-grid {
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 12px;
+  gap: 8px;
+  margin-bottom: 0;
 }
 
 .home2-schedule-grid .schedule-card {
-  padding: 18px 14px;
+  padding: 14px 10px;
 }
 
 .home2-schedule-grid .schedule-card h3 {
-  font-size: 1rem;
+  margin-bottom: 4px;
+  font-size: 0.96rem;
+  line-height: 1.35;
 }
 
 .home2-schedule-grid .schedule-day {
+  margin-bottom: 2px !important;
   font-size: 1.1rem;
+}
+
+.home2-schedule-grid .schedule-card p {
+  line-height: 1.45;
 }
 
 .home2-fee-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 16px;
+  gap: 10px;
   justify-content: center;
   width: min(520px, 100%);
   margin: 0 auto;
@@ -1287,6 +1316,8 @@ img {
 .home2-fee-grid .fee-card {
   text-align: center;
   width: 100%;
+  min-height: 148px;
+  padding: 14px 10px;
 }
 
 .home2-experience-card {
@@ -1299,32 +1330,32 @@ img {
 }
 
 .home2-experience-text {
-  padding: 28px;
+  padding: 20px 22px;
 }
 
 .home2-experience-text h2 {
-  margin: 0 0 10px;
+  margin: 0 0 8px;
   font-family: "Zen Kaku Gothic New", sans-serif;
 }
 
 .home2-experience-text p:last-of-type {
-  margin-bottom: 20px;
+  margin-bottom: 14px;
 }
 
 .home2-experience-photo {
-  min-height: 250px;
+  min-height: 210px;
   background:
     linear-gradient(180deg, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.08)),
     url("./images/トップページ-見学.jpg") center/cover;
 }
 
 .home2-contact-band {
-  padding-top: 24px;
-  padding-bottom: 30px;
+  padding-top: 14px;
+  padding-bottom: 18px;
 }
 
 .home2-contact-band-inner {
-  padding: 28px 24px;
+  padding: 20px 18px;
   background:
     linear-gradient(135deg, rgba(140, 13, 13, 0.96), rgba(95, 10, 10, 0.94)),
     radial-gradient(circle at top, rgba(255, 255, 255, 0.12), transparent 34%);
@@ -1333,12 +1364,12 @@ img {
 }
 
 .home2-contact-band-inner h2 {
-  margin: 0 0 8px;
+  margin: 0 0 6px;
   font-family: "Zen Kaku Gothic New", sans-serif;
 }
 
 .home2-contact-band-inner p {
-  margin: 0 0 18px;
+  margin: 0 0 12px;
   color: rgba(255, 255, 255, 0.9);
 }
 
@@ -1608,12 +1639,12 @@ img {
   }
 
   .home2-hero {
-    min-height: 380px;
+    min-height: 340px;
   }
 
   .home2-feature-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 10px;
+    gap: 8px;
   }
 
   .home2-schedule-grid {
@@ -1646,7 +1677,7 @@ img {
   }
 
   .home2-fee-grid .fee-card {
-    padding: 16px 10px;
+    padding: 12px 8px;
   }
 
   .home2-experience-card {
@@ -1721,7 +1752,7 @@ img {
   }
 
   .home2-hero {
-    min-height: 320px;
+    min-height: 280px;
   }
 
   .home2-feature-grid {
@@ -1781,7 +1812,7 @@ img {
   }
 
   .home2-hero-content {
-    padding: 48px 0 30px;
+    padding: 40px 0 24px;
   }
 
   .home2-hero-actions {
@@ -1789,11 +1820,11 @@ img {
   }
 
   .home2-experience-text {
-    padding: 20px;
+    padding: 16px;
   }
 
   .home2-experience-photo {
-    min-height: 180px;
+    min-height: 150px;
   }
 
   .hero-content {
