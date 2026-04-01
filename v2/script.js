@@ -1,20 +1,3 @@
-const navToggle = document.querySelector(".nav-toggle");
-const navMenu = document.querySelector(".main-nav");
-
-if (navToggle && navMenu) {
-  navToggle.addEventListener("click", () => {
-    const isOpen = navMenu.classList.toggle("is-open");
-    navToggle.setAttribute("aria-expanded", String(isOpen));
-  });
-
-  navMenu.querySelectorAll("a").forEach((link) => {
-    link.addEventListener("click", () => {
-      navMenu.classList.remove("is-open");
-      navToggle.setAttribute("aria-expanded", "false");
-    });
-  });
-}
-
 const form = document.querySelector("#contact-form");
 
 if (form) {
@@ -28,9 +11,9 @@ if (form) {
     const type = formData.get("type");
     const message = formData.get("message");
 
-    const subject = `【${type}】矢頭派糸東流修交会 修義舘へのお問い合わせ`;
+    const subject = `${type}｜矢頭派糸東流修交会 修義舘へのお問い合わせ`;
     const body = [
-      "修義舘ホームページからお問い合わせがありました。",
+      "修義舘ホームページよりお問い合わせがありました。",
       "",
       `お名前: ${name}`,
       `メールアドレス: ${email}`,
