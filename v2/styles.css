@@ -364,6 +364,13 @@ img {
   padding-right: 16px;
 }
 
+.faq-layout .section-heading > p:not(.eyebrow),
+.faq-list p,
+.note-board p,
+.note-board .simple-inline-link {
+  color: var(--text);
+}
+
 .centered {
   max-width: 740px;
   margin: 0 auto 36px;
