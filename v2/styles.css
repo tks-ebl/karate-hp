@@ -1061,7 +1061,7 @@ img {
 
 .index2-nav {
   display: grid;
-  grid-template-columns: repeat(7, minmax(0, 1fr));
+  grid-template-columns: repeat(6, minmax(0, 1fr));
   align-items: stretch;
   gap: 4px;
   overflow-x: visible;
@@ -1287,9 +1287,17 @@ img {
 }
 
 .home2-schedule-grid {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(6, minmax(0, 1fr));
   gap: 8px;
   margin-bottom: 0;
+}
+
+.home2-schedule-grid .schedule-card {
+  grid-column: span 2;
+}
+
+.home2-schedule-grid .schedule-card:nth-child(n + 4) {
+  grid-column: span 3;
 }
 
 .home2-schedule-grid .schedule-card {
@@ -1588,7 +1596,7 @@ img {
   }
 
   .index2-nav {
-    grid-template-columns: repeat(7, minmax(0, 1fr));
+    grid-template-columns: repeat(6, minmax(0, 1fr));
     gap: 3px;
   }
 
@@ -1670,8 +1678,16 @@ img {
   }
 
   .home2-schedule-grid {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(6, minmax(0, 1fr));
     gap: 8px;
+  }
+
+  .home2-schedule-grid .schedule-card {
+    grid-column: span 2;
+  }
+
+  .home2-schedule-grid .schedule-card:nth-child(n + 4) {
+    grid-column: span 3;
   }
 
   .home2-schedule-grid .schedule-card {
