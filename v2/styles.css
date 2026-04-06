@@ -279,6 +279,11 @@ img {
   border: 1px solid rgba(255, 255, 255, 0.26);
 }
 
+.button-instagram {
+  background: linear-gradient(135deg, #833ab4, #fd1d1d 55%, #fcb045);
+  color: #fff;
+}
+
 .section {
   padding: 16px 0;
 }
