@@ -1107,13 +1107,13 @@ img {
   background: linear-gradient(180deg, #b51414, #8a0c0c);
 }
 
-.index2-page {
+.practice-showcase {
   background:
     radial-gradient(circle at top, rgba(163, 23, 23, 0.06), transparent 24%),
     linear-gradient(180deg, #f8f4ed 0%, #f4eee5 100%);
 }
 
-.index2-hero {
+.practice-showcase-hero {
   position: relative;
   min-height: 220px;
   display: grid;
@@ -1124,14 +1124,14 @@ img {
     url("./images/稽古案内-TOP.jpg") center 38% / cover;
 }
 
-.index2-hero::after {
+.practice-showcase-hero::after {
   content: "";
   position: absolute;
   inset: 0;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.18));
 }
 
-.index2-hero-content {
+.practice-showcase-hero-inner {
   position: relative;
   z-index: 1;
   padding: 54px 0 34px;
@@ -1139,66 +1139,72 @@ img {
   color: #fff;
 }
 
-.index2-hero-content h1 {
+.practice-showcase-hero-inner h1 {
   margin: 0;
   font-family: "Zen Kaku Gothic New", sans-serif;
   font-size: clamp(2.4rem, 6vw, 3.8rem);
   letter-spacing: 0.08em;
 }
 
-.index2-section-tight {
+.practice-showcase-section {
   padding-top: 12px;
   padding-bottom: 12px;
 }
 
-.index2-card-grid,
-.index2-bottom-grid {
+.practice-showcase-grid {
   display: grid;
   gap: 12px;
 }
 
-.index2-card-grid {
+.practice-showcase-grid-topics {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
-.index2-topic-card,
-.index2-bottom-card {
+.practice-showcase-grid-features {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.practice-showcase-card {
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
   background: #fff;
   border: 1px solid rgba(29, 26, 23, 0.08);
   box-shadow: 0 10px 26px rgba(32, 29, 27, 0.08);
 }
 
-.index2-topic-photo,
-.index2-bottom-photo {
-  min-height: 112px;
-  background:
-    linear-gradient(180deg, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.12)),
-    center/cover no-repeat;
+.practice-showcase-grid-features .practice-showcase-card {
+  flex-direction: column-reverse;
 }
 
-.index2-photo-basic {
+.practice-showcase-photo {
+  min-height: 112px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.practice-showcase-photo-basic {
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.12)), url("./images/稽古案内-基本稽古.jpg");
 }
 
-.index2-photo-kata {
+.practice-showcase-photo-kata {
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.12)), url("./images/稽古案内-型稽古.jpg");
 }
 
-.index2-photo-kumite {
+.practice-showcase-photo-kumite {
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.12)), url("./images/稽古案内-組手稽古.jpg");
 }
 
-.index2-photo-train {
+.practice-showcase-photo-training {
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.12)), url("./images/稽古案内-強化練習.jpg");
 }
 
-.index2-photo-trial {
+.practice-showcase-photo-tournament {
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.12)), url("./images/入会案内.jpg");
 }
 
-.index2-topic-label,
-.index2-bottom-label {
+.practice-showcase-label {
   padding: 10px 14px;
   background: linear-gradient(180deg, #b51414, #8a0c0c);
   color: #fff;
@@ -1208,20 +1214,16 @@ img {
   font-weight: 700;
 }
 
-.index2-gojokun-image-wrap {
+.practice-showcase-gojokun {
   max-width: 860px;
   margin: 0 auto;
 }
 
-.index2-gojokun-image {
+.practice-showcase-gojokun-image {
   display: block;
   width: 100%;
   height: auto;
   box-shadow: 0 12px 24px rgba(79, 63, 38, 0.12);
-}
-
-.index2-bottom-grid {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .home2-page {
@@ -1522,13 +1524,13 @@ img {
   .simple-link-grid,
   .simple-info-grid,
   .top-summary-grid,
-  .index2-card-grid,
+  .practice-showcase-grid-topics,
   .practice-topic-grid,
   .home2-feature-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .index2-bottom-grid {
+  .practice-showcase-grid-features {
     grid-template-columns: 1fr;
   }
 }
@@ -1617,7 +1619,7 @@ img {
     padding: 30px 22px;
   }
 
-  .index2-gojokun-image-wrap {
+  .practice-showcase-gojokun {
     max-width: 100%;
   }
 
@@ -1632,29 +1634,27 @@ img {
     font-size: 0.63rem;
   }
 
-  .index2-card-grid {
+  .practice-showcase-grid-topics {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 8px;
   }
 
-  .index2-bottom-grid {
+  .practice-showcase-grid-features {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 8px;
   }
 
-  .index2-topic-photo,
-  .index2-bottom-photo {
+  .practice-showcase-photo {
     min-height: 82px;
   }
 
-  .index2-topic-label,
-  .index2-bottom-label {
+  .practice-showcase-label {
     padding: 7px 6px;
     font-size: 0.88rem;
     line-height: 1.25;
   }
 
-  .index2-hero {
+  .practice-showcase-hero {
     min-height: 150px;
   }
 
@@ -1673,15 +1673,15 @@ img {
     font-size: 2rem;
   }
 
-  .index2-hero-content {
+  .practice-showcase-hero-inner {
     padding: 28px 0 18px;
   }
 
-  .index2-hero-content h1 {
+  .practice-showcase-hero-inner h1 {
     font-size: 2rem;
   }
 
-  .index2-section-tight {
+  .practice-showcase-section {
     padding-top: 8px;
     padding-bottom: 8px;
   }
@@ -1775,26 +1775,24 @@ img {
     letter-spacing: -0.02em;
   }
 
-  .index2-card-grid {
+  .practice-showcase-grid-topics {
     gap: 6px;
   }
 
-  .index2-bottom-grid {
+  .practice-showcase-grid-features {
     gap: 6px;
   }
 
-  .index2-topic-photo,
-  .index2-bottom-photo {
+  .practice-showcase-photo {
     min-height: 64px;
   }
 
-  .index2-topic-label,
-  .index2-bottom-label {
+  .practice-showcase-label {
     padding: 6px 4px;
     font-size: 0.74rem;
   }
 
-  .index2-hero {
+  .practice-showcase-hero {
     min-height: 118px;
   }
 
@@ -1804,7 +1802,7 @@ img {
     min-height: 118px;
   }
 
-  .index2-hero-content {
+  .practice-showcase-hero-inner {
     padding: 22px 0 14px;
   }
 
@@ -1813,7 +1811,7 @@ img {
     padding: 22px 0 14px;
   }
 
-  .index2-hero-content h1 {
+  .practice-showcase-hero-inner h1 {
     font-size: 1.75rem;
   }
 
@@ -1822,12 +1820,12 @@ img {
     font-size: 1.75rem;
   }
 
-  .index2-section-tight {
+  .practice-showcase-section {
     padding-top: 4px;
     padding-bottom: 4px;
   }
 
-  .index2-gojokun-image {
+  .practice-showcase-gojokun-image {
     box-shadow: none;
   }
 
