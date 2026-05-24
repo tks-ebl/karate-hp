@@ -747,10 +747,16 @@ img {
   margin-top: 0;
 }
 
+.location-photo-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  margin-top: 14px;
+}
+
 .location-place-photo {
   display: block;
   width: 100%;
-  margin-top: 14px;
   border-radius: 12px;
   aspect-ratio: 4 / 3;
   object-fit: cover;
@@ -1062,5 +1068,9 @@ img {
   .simple-board,
   .note-board {
     padding: 28px 30px;
+  }
+
+  .location-photo-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
