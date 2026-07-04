@@ -287,6 +287,9 @@ img {
 }
 
 .simple-hero,
+.simple-hero-02,
+.simple-hero-03,
+.simple-hero-04,
 .simple-hero-short,
 .sub-hero {
   min-height: var(--hero-min);
@@ -296,6 +299,21 @@ img {
   background:
     linear-gradient(90deg, rgba(16, 12, 10, 0.46), rgba(16, 12, 10, 0.18)),
     url("../images/Top.png") center/cover;
+}
+.simple-hero-02 {
+  background:
+    linear-gradient(90deg, rgba(16, 12, 10, 0.46), rgba(16, 12, 10, 0.18)),
+    url("../images/Top-02.png") center/cover;
+}
+.simple-hero-03 {
+  background:
+    linear-gradient(90deg, rgba(16, 12, 10, 0.46), rgba(16, 12, 10, 0.18)),
+    url("../images/Top-03.png") center/cover;
+}
+.simple-hero-04 {
+  background:
+    linear-gradient(90deg, rgba(16, 12, 10, 0.46), rgba(16, 12, 10, 0.18)),
+    url("../images/Top-04.png") center/cover;
 }
 
 .sub-hero-faq {
